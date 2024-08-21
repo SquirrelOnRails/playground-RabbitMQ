@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "remmremmer.RabbitMQ", "remmremmer.RabbitMQ\remmremmer.RabbitMQ.csproj", "{95B0B357-AD98-4245-906A-5FFD92A834E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{4B165EEA-616C-41D1-B079-A479F5988602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{F4F9BF75-1E9D-4550-9B45-DF3D8BBD1EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95B0B357-AD98-4245-906A-5FFD92A834E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95B0B357-AD98-4245-906A-5FFD92A834E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95B0B357-AD98-4245-906A-5FFD92A834E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95B0B357-AD98-4245-906A-5FFD92A834E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B165EEA-616C-41D1-B079-A479F5988602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B165EEA-616C-41D1-B079-A479F5988602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B165EEA-616C-41D1-B079-A479F5988602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B165EEA-616C-41D1-B079-A479F5988602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F9BF75-1E9D-4550-9B45-DF3D8BBD1EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F9BF75-1E9D-4550-9B45-DF3D8BBD1EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F9BF75-1E9D-4550-9B45-DF3D8BBD1EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F9BF75-1E9D-4550-9B45-DF3D8BBD1EEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
