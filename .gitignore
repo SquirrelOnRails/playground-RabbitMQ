@@ -1,0 +1,68 @@
+# Ignore the build results of the project
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+
+# Ignore the auto-generated files
+*.log
+*.tlog
+*.cache
+*.ide
+
+# Ignore Visual Studio Code directories
+.vscode/
+
+# Ignore Visual Studio directories
+.vs
+
+# Ignore Rider directories
+.idea/
+*.sln.iml
+
+# Ignore .NET Core, ASP.NET Core environment files
+.env
+.env.*
+
+# Ignore any publish output
+wwwroot/
+dist/
+publish/
+
+# Ignore files from the .NET Core CLI
+**/project.lock.json
+**/project.fragment.lock.json
+artifacts/
+
+# Ignore NuGet packages directory
+packages/
+*.nupkg
+*.snupkg
+
+# Ignore the database files (if applicable)
+*.mdf
+*.ldf
+
+# Ignore JetBrains Rider related files
+.idea/
+*.sln.iml
+
+# Ignore logs, build results, and static files
+**/[Dd]ebug/
+**/[Rr]elease/
+**/x64/
+**/x86/
+**/[Aa][rR][mM]/
+**/[Aa][rR][mM]64/
+**/[aA][rR][cC]h64/
+**/[aA][aR][vV]7/
+
+# Ignore auto-generated files by Windows
+Thumbs.db
+ehthumbs.db
+
+# Ignore folder for Visual Studio temporary projects
+ProjectRelatedFileFromDirectory/
