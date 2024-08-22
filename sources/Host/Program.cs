@@ -24,8 +24,7 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/", () =>
 {
     return "running...";
-})
-.WithName("root");
+});
 app.MapGet("/rabbitmq_single", () =>
 {
     var client = new BL.Clients.RabbitMQClient(new Uri(rabbitMQParams.HostName), rabbitMQParams.QueueName);
@@ -42,6 +41,23 @@ app.MapGet("/rabbitmq_repeating", () =>
             Thread.Sleep(1000);
         }
     }).Start();
+});
+app.MapGet("/masstransit_single", () =>
+{
+    var client = new BL.Clients.MassTransitClient(new Uri(rabbitMQParams.HostName), rabbitMQParams.UserName, rabbitMQParams.Password);
+});
+app.MapGet("/masstransit_repeating", () =>
+{
+    var client = new BL.Clients.MassTransitClient(new Uri(rabbitMQParams.HostName), rabbitMQParams.UserName, rabbitMQParams.Password);
+    
+    new Thread(() => 
+    {
+        while (true)
+        {
+            client.TextMessage(new Random().Next(0, 100).ToString()).Wait();
+            Thread.Sleep(1000);
+        }
+    });
 });
 
 app.Run();
